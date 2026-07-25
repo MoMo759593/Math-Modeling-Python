@@ -15,10 +15,3 @@
 - [10. 灰色系统分析方法](#10-灰色系统分析方法)
 
 ---
-
-## 🚀 快速开始
-
-```bash
-git clone https://github.com/MoMo759593/Math-Modeling-Python.git
-cd Math-Modeling-Python
-pip install -r requirements.txt
