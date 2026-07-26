@@ -37,7 +37,7 @@
 **2.样条函数插值方法**：二次样条函数插值、三次样条函数插值  
    特点：采用分段低次多项式和节点处光滑拼接，能克服一般插值方法的缺点.  
    
-   二次样条函数插值：在每两个相邻的x区间里，拟合到x的二次方，拼接.其函数值、一阶导数连续，但二阶导数不连续，可能会有“折角”感.  
+   [二次样条函数插值](model/01_interpolation/quadratic_splinequadratic_spline.py)：在每两个相邻的x区间里，拟合到x的二次方，拼接.其函数值、一阶导数连续，但二阶导数不连续，可能会有“折角”感.  
    其一般式为：<img width="334" height="23" alt="image" src="https://github.com/user-attachments/assets/8e2b2b69-c924-4ecd-83ff-36d9b900c368" />  
    三个数值的计算方式为：  
    1. <img width="171" height="26" alt="image" src="https://github.com/user-attachments/assets/4909a75e-84bf-4981-b59d-a4fba4b73a7f" />
@@ -45,7 +45,7 @@
    3. <img width="80" height="23" alt="image" src="https://github.com/user-attachments/assets/e04aaadf-75dd-43a8-9105-4d992fb620bb" />  
    导数值用商差解决.  
    
-   三次样条函数插值：是二次样条函数的递推.二阶导数连续，更光滑.  
+   [三次样条函数插值](model/01_interpolation/cubic_spline.py)：是二次样条函数的递推.二阶导数连续，更光滑.  
    其一般式为：<img width="310" height="39" alt="image" src="https://github.com/user-attachments/assets/d65007ad-a1b0-440e-97c2-963028f254d2" />  
    四个数值由左右端点值和左右端点二阶导值确定.  
    
