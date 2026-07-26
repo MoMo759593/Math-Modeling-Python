@@ -62,7 +62,7 @@
    其公式为：<img width="236" height="49" alt="image" src="https://github.com/user-attachments/assets/5ba994c5-058a-4310-92b8-252c7b4c6b56" />  
    意义是：对已知区间里的N(t)函数，已经有它抛光k-1次的函数，可以这样抛光得k次函数.  
    
-   [**等距B样条**](model/01_interpolation/)：节点分布均匀，基函数形式统一，计算方便.**便于程序实现.**  
+   [**等距B样条**](model/01_interpolation/Equidistant_B_spline.py)：节点分布均匀，基函数形式统一，计算方便.**便于程序实现.**  
    用法：输入已知数据x_list和y_list，可以得到等距B样条函数S(x)，对于任意输入的x，都可以得到y.  
    
    一维/二维等距B样条：分别处理曲线、曲面问题.  
