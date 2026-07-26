@@ -29,12 +29,32 @@
 **1.一般插值方法**：拉格朗日插值、牛顿插值  
    特点：全局多项式插值.对n+1个节点，有最高此项不超过n的多项式.  
    [拉格朗日插值](model/01_interpolation/Lagrrange_interpolation.py)：构造一组基函数L.  
-   牛顿插值：基于差商递推，每次只加末项.  
-   作用：  
-   解决什么问题：  
-   缺点：  
+   [牛顿插值](model/01_interpolation/Newton_interpolation.py)：基于差商递推，每次只加末项.  
+   作用：估计已知离散值间任意数值的值(如求中值).  
+   解决什么问题：数量少、计算量小的离散场景.  
+   缺点：节点越多，断点越震荡，逼近效果差.因此，只适用于节点数量小的情况.
+   
 **2.样条函数插值方法**：二次样条函数插值、三次样条函数插值  
+   特点：采用分段低次多项式和节点处光滑拼接，能克服一般插值方法的缺点.  
+   
+   二次样条函数插值：在每两个相邻的x区间里，拟合到x的二次方，拼接.其函数值、一阶导数连续，但二阶导数不连续，可能会有“折角”感.  
+   其一般式为：<img width="334" height="23" alt="image" src="https://github.com/user-attachments/assets/8e2b2b69-c924-4ecd-83ff-36d9b900c368" />  
+   三个数值的计算方式为：  
+   1. <img width="171" height="26" alt="image" src="https://github.com/user-attachments/assets/4909a75e-84bf-4981-b59d-a4fba4b73a7f" />
+   2. <img width="140" height="24" alt="image" src="https://github.com/user-attachments/assets/c03f448c-9b89-4aee-9349-21f33b5da257" />
+   3. <img width="80" height="23" alt="image" src="https://github.com/user-attachments/assets/e04aaadf-75dd-43a8-9105-4d992fb620bb" />  
+   导数值用商差解决.  
+   
+   三次样条函数插值：是二次样条函数的递推.二阶导数连续，更光滑.  
+   其一般式为：<img width="310" height="39" alt="image" src="https://github.com/user-attachments/assets/d65007ad-a1b0-440e-97c2-963028f254d2" />  
+   四个数值由左右端点值和左右端点二阶导值确定.  
+   
+   作用：构造通过所有数据的光滑曲线.  
+   解决什么问题：数据多，要求光滑曲线的场景.  
+   
 **3.B样条函数插值方法**：磨光函数、等距B样条函数、一维等距B样条函数插值、二维等距B样条函数插值  
+   特点：用局部支撑的基函数，而非用分段多项式函数.
+   
 **4.最小二乘拟合方法**：线性最小二乘拟合方法、最小二乘拟合函数的求解、一般线性最小二乘拟合方法、非线性最小二乘拟合方法  
 
 **案例一 黄河小浪底调水调沙问题**  
