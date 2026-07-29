@@ -131,7 +131,15 @@
 
 ---
 
-## 3-概率统计方法
+## 3-概率统计方法  
+
+本章节的五个小结具有鲜明的逻辑链，依次提供了：  
+   1. 概率论与数理统计理论，包括常用数学模型.
+   2. 实际问题数学化.如何把现实数据变为好处理的数学数据.
+   3. 如何从现实数据得到模型参数，并检查他们的合理性.
+   4. 筛选有效影响因素.
+   5. 研究变量和变量间关系.
+
 **1. 概率分布与数字特征**：一维随机变量与分布函数、多维随机变量与分布函数、随机变量的数学期望与方差(数学期望、方差)  
    特点：理论基础.用来描述统计规律、提炼关键指标.  
    一维随机变量与分布函数：**分布函数**.对于某随机变量，其呈现f(t)，则分布函数<img width="199" height="31" alt="image" src="https://github.com/user-attachments/assets/5d4949e6-ba99-4f9a-9546-293bd6cc9bb1" />  
@@ -184,8 +192,29 @@
    区域估法:用于检验前者θ的精确程度、可信度.会需带入计算即可.
    
 **4. 方差分析法**  
-   用于检验前者算出来的参数所代表的因素有没有真实影响.  
+   用于检验前者算出来的参数所代表的因素有没有真实影响.可用于筛选有效因素、比较方案优劣、修正系统偏差.  
+   核心参数：S_T = S_A + S_E.其中，S_T为总平方和，描述数据偏差；S_A为组件平方和，也称因素A平方和；S_E为组内平方和，也称误差平方和.  
+   现在，假设我们研究的元素A有m个等级，每个等级都进行了n次测验.则设因素自由度dfA = m-1，组内自由度为dfE = m(n-1).  
+   则有均方MS为<img width="170" height="49" alt="image" src="https://github.com/user-attachments/assets/59226f47-e8e1-481d-8104-ce711266c045" />  
+   进而，假设统计量F为MS_A和MS_E的比值.若F很大，则认为A因素有显著影响.  
    
 **5. 相关分析法**：相关系数、相关性检验  
+   作用：研究两个变量X和Y间是否相关.  
+   相关系数：定义协方差公式：Cov(X,Y) = E[(X - E(x)) * (Y - E(y))] = E(XY) - E(x) * E(Y).  
+   则有相关性系数<img width="242" height="64" alt="image" src="https://github.com/user-attachments/assets/1d76b619-2873-47ca-8549-2d080bf8d91e" /> = <img width="108" height="47" alt="image" src="https://github.com/user-attachments/assets/7451329f-14c4-4762-960b-096ce1c0a824" />  
+   其中，S_X是x方差开根.  
+   r的取值有如下含义：<img width="348" height="193" alt="image" src="https://github.com/user-attachments/assets/a2bd7607-1d52-4b26-844a-51733d66702b" />  
+   同时，经验上有：<img width="167" height="101" alt="image" src="https://github.com/user-attachments/assets/ed09592b-8b1f-4fbb-bb63-ba4485c2704a" />  
+   相关性检验：用于检查r的真实性.  
+   计算<img width="155" height="50" alt="image" src="https://github.com/user-attachments/assets/19b23507-24f7-4aee-9df9-824059f933d1" />  
+   其中，n为总样本数.查表后，t若大于临界值，则显著相关.  
+
+案例一 足球门的危险区域问题  
+
+案例二 最优评卷问题  
+
+---
+
+## 4-回归分析方法  
 
 ---
