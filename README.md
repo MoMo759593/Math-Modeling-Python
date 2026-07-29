@@ -133,6 +133,16 @@
 
 ## 3-概率统计方法
 **1. 概率分布与数字特征**：一维随机变量与分布函数、多维随机变量与分布函数、随机变量的数学期望与方差(数学期望、方差)  
+   特点：理论基础.用来描述统计规律、提炼关键指标.  
+   一维随机变量与分布函数：**分布函数**.对于某随机变量，其呈现f(t)，则分布函数<img width="199" height="31" alt="image" src="https://github.com/user-attachments/assets/5d4949e6-ba99-4f9a-9546-293bd6cc9bb1" />  
+   其意义为：随机变量不超过x的概率大小.同时，f(x)需满足在正负无穷上积分为1，即归一化.  
+   多为随机变量与分布函数：以二维为例，视f(x,y)为f(t)，则F(x)变为F(x,y)二重积分，计算即可.但要保证，F(x,y) = F(x)F(y)，即x、y独立.同时，f(x,y)在其定义域D是满足积分为1，即归一化.多维以此类推.  
+   随机变量的数学期望与方差：  
+   数学期望E：<img width="151" height="28" alt="image" src="https://github.com/user-attachments/assets/fb0b0347-34ce-4dc4-9b48-67f90b55fbbc" />，<img width="188" height="29" alt="image" src="https://github.com/user-attachments/assets/b754b57e-aa2e-445f-9a8c-bdb060efd55e" />  
+   其中，x可视为一种g(x)，计算即可.
+   方差D：<img width="161" height="26" alt="image" src="https://github.com/user-attachments/assets/d4c5ee63-d557-47d1-8305-8d2dc1e0f309" />  
+   其他常用分布：两点分布、二项分布、泊松分布、均匀分布、正态分布等.
+   
 **2. 样本与统计量**：常用统计量  
 **3. 参数估计法**：点估计法(矩估计法、最大似然估计法、估计量的评价)、区间估计法(正态总体期望的置信区间、正态总体方差的区间估计)  
 **4. 方差分析法**  
