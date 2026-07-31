@@ -256,7 +256,7 @@
    一元线性回归模型：因变量y关于自变量x的模型，y =  β_0 + β_1 x + ε.其中，ε ~ N(0,σ²).  
    最小二乘估计：详见[插值与拟合方法](#1-插值与拟合方法).利用其中最小二乘法计算.但由于β_0是常数项，在解方程时需要如下调整：<img width="299" height="50" alt="image" src="https://github.com/user-attachments/assets/312a980e-c2c8-4d65-afc4-ad17427251e4" />  
    两个参数的性质:无偏性、方差最小、正态性.  
-   回归方程的显著性检验：定义回归平方和S_R：<img width="113" height="50" alt="image" src="https://github.com/user-attachments/assets/aa20bd9e-5b6b-4a56-a9c8-cc824142e9d5" />，残差平方和S_R：<img width="125" height="45" alt="image" src="https://github.com/user-attachments/assets/98b6c60d-a4dc-443a-9d9a-4cfa0a98645e" />  
+   [回归方程的显著性检验](model/04_regression/Ovlrwlsm.py)：定义回归平方和S_R：<img width="113" height="50" alt="image" src="https://github.com/user-attachments/assets/aa20bd9e-5b6b-4a56-a9c8-cc824142e9d5" />，残差平方和S_R：<img width="125" height="45" alt="image" src="https://github.com/user-attachments/assets/98b6c60d-a4dc-443a-9d9a-4cfa0a98645e" />  
    其中，y_i是原数据;y拔是平均值;尖顶y_i是拟合.另，有总平方和S_T = S_R + S_R.  
    进行F检验：<img width="197" height="40" alt="image" src="https://github.com/user-attachments/assets/aa509d25-cb63-418d-8462-b23217f045a7" />  
    若F大，说明y和x有关.  
