@@ -195,6 +195,9 @@
 **4. 方差分析法**  
    用于检验前者算出来的参数所代表的因素有没有真实影响.可用于筛选有效因素、比较方案优劣、修正系统偏差.  
    核心参数：S_T = S_A + S_E.其中，S_T为总平方和，描述数据偏差；S_A为组件平方和，也称因素A平方和；S_E为组内平方和，也称误差平方和.  
+   其中，S_A计算方式：<img width="140" height="47" alt="image" src="https://github.com/user-attachments/assets/f9c7bcd4-a36d-495f-a5e0-b3b0286b9376" />  
+   S_E计算方式：<img width="157" height="56" alt="image" src="https://github.com/user-attachments/assets/717de731-c81f-457a-86b4-19a392659fca" />  
+   此处，S_E需要在共r个不同因素中，每个因素依次进行n次.故需要两次求和.  
    现在，假设我们研究的元素A有m个等级，每个等级都进行了n次测验.则设因素自由度dfA = m-1，组内自由度为dfE = m(n-1).  
    则有均方MS为<img width="170" height="49" alt="image" src="https://github.com/user-attachments/assets/59226f47-e8e1-481d-8104-ce711266c045" />  
    进而，假设统计量F为MS_A和MS_E的比值.若F很大，则认为A因素有显著影响.  
