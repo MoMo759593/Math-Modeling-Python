@@ -209,12 +209,37 @@
    计算<img width="155" height="50" alt="image" src="https://github.com/user-attachments/assets/19b23507-24f7-4aee-9df9-824059f933d1" />  
    其中，n为总样本数.查表后，t若大于临界值，则显著相关.  
 
-案例一 足球门的危险区域问题  
+**案例一 足球门的危险区域问题**  
+已知条件：标准球场长104m，宽69m；球门高2.44m，宽7.32m.射门球速约10m/s.  
+题目所求：  
+1. 球员在不同位置射门对球门的威胁度分析，绘制危险区域.
+2. 在有一名守门员防守的情况下，进一步研究威胁度和危险区域.  
 
-案例二 最优评卷问题  
+解题思路：
+1. 核心假设：球飞向球门，呈二维正态分布.定义威胁度：<img width="195" height="48" alt="image" src="https://github.com/user-attachments/assets/97cc53ea-1a36-4305-bafa-83e9ee5d59d9" />
+2. 建立坐标系：  
+   1. 原点O：球门底边中点.xOy平面，地面；yOz平面，球门所在平面.
+   2. <img width="320" height="323" alt="image" src="https://github.com/user-attachments/assets/62632dcd-8709-47ec-86d4-baf51512b61e" />
+3. 对问题1.设射向球门所在平面yOz上一点(Y,Z)，则有<img width="298" height="55" alt="image" src="https://github.com/user-attachments/assets/f7401319-4b9f-4493-a883-da5017649751" />  
+   其中，方差和球员素质k、射门距离d有关，且和射门偏角θ有关，即<img width="86" height="47" alt="image" src="https://github.com/user-attachments/assets/f667bcc5-cf89-44d0-8e91-021aaf8ca6fc" />  
+   再设命中概率<img width="213" height="53" alt="image" src="https://github.com/user-attachments/assets/e9943310-96ad-4131-bc14-8d443e98ab77" />  
+   回代如威胁度函数计算.球员素质k需要用数据反解.第一题完毕.
+4. 对问题2.仅需修正威胁度定义<img width="224" height="43" alt="image" src="https://github.com/user-attachments/assets/3084b967-4ac6-4647-a2ff-5227f5b18440" />  
+
+案例一是一个复杂的A类题目，笔者在此仅简单给出了思路.详细推导思路需要回归书本.  
+
+**案例二 最优评卷问题**  
 
 ---
 
 ## 4-回归分析方法  
+
+1. 一元线性回归
+2. 多元线性回归
+3. 回归模型的选择方法
+4. 回归模型的正交化设计方法
+5. 多重共线性与有偏估计方法
+
+案例一 沼气的生成问题
 
 ---
