@@ -195,6 +195,9 @@
 **4. 方差分析法**  
    用于检验前者算出来的参数所代表的因素有没有真实影响.可用于筛选有效因素、比较方案优劣、修正系统偏差.  
    核心参数：S_T = S_A + S_E.其中，S_T为总平方和，描述数据偏差；S_A为组件平方和，也称因素A平方和；S_E为组内平方和，也称误差平方和.  
+   其中，S_A计算方式：<img width="140" height="47" alt="image" src="https://github.com/user-attachments/assets/f9c7bcd4-a36d-495f-a5e0-b3b0286b9376" />  
+   S_E计算方式：<img width="157" height="56" alt="image" src="https://github.com/user-attachments/assets/717de731-c81f-457a-86b4-19a392659fca" />  
+   此处，S_E需要在共r个不同因素中，每个因素依次进行n次.故需要两次求和.  
    现在，假设我们研究的元素A有m个等级，每个等级都进行了n次测验.则设因素自由度dfA = m-1，组内自由度为dfE = m(n-1).  
    则有均方MS为<img width="170" height="49" alt="image" src="https://github.com/user-attachments/assets/59226f47-e8e1-481d-8104-ce711266c045" />  
    进而，假设统计量F为MS_A和MS_E的比值.若F很大，则认为A因素有显著影响.  
@@ -256,7 +259,7 @@
    一元线性回归模型：因变量y关于自变量x的模型，y =  β_0 + β_1 x + ε.其中，ε ~ N(0,σ²).  
    最小二乘估计：详见[插值与拟合方法](#1-插值与拟合方法).利用其中最小二乘法计算.但由于β_0是常数项，在解方程时需要如下调整：<img width="299" height="50" alt="image" src="https://github.com/user-attachments/assets/312a980e-c2c8-4d65-afc4-ad17427251e4" />  
    两个参数的性质:无偏性、方差最小、正态性.  
-   回归方程的显著性检验：定义回归平方和S_R：<img width="113" height="50" alt="image" src="https://github.com/user-attachments/assets/aa20bd9e-5b6b-4a56-a9c8-cc824142e9d5" />，残差平方和S_R：<img width="125" height="45" alt="image" src="https://github.com/user-attachments/assets/98b6c60d-a4dc-443a-9d9a-4cfa0a98645e" />  
+   [回归方程的显著性检验](model/04_regression/Ovlrwlsm.py)：定义回归平方和S_R：<img width="113" height="50" alt="image" src="https://github.com/user-attachments/assets/aa20bd9e-5b6b-4a56-a9c8-cc824142e9d5" />，残差平方和S_R：<img width="125" height="45" alt="image" src="https://github.com/user-attachments/assets/98b6c60d-a4dc-443a-9d9a-4cfa0a98645e" />  
    其中，y_i是原数据;y拔是平均值;尖顶y_i是拟合.另，有总平方和S_T = S_R + S_R.  
    进行F检验：<img width="197" height="40" alt="image" src="https://github.com/user-attachments/assets/aa509d25-cb63-418d-8462-b23217f045a7" />  
    若F大，说明y和x有关.  
