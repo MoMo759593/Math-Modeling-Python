@@ -202,7 +202,7 @@
    则有均方MS为<img width="170" height="49" alt="image" src="https://github.com/user-attachments/assets/59226f47-e8e1-481d-8104-ce711266c045" />  
    进而，假设统计量F为MS_A和MS_E的比值.若F很大，则认为A因素有显著影响.  
    
-**5. 相关分析法**：相关系数、相关性检验  
+**[5. 相关分析法](model/03_probability/correlation_analysis.py)**：相关系数、相关性检验  
    作用：研究两个变量X和Y间是否相关.  
    相关系数：定义协方差公式：Cov(X,Y) = E[(X - E(x)) * (Y - E(y))] = E(XY) - E(x) * E(Y).  
    则有相关性系数<img width="242" height="64" alt="image" src="https://github.com/user-attachments/assets/1d76b619-2873-47ca-8549-2d080bf8d91e" /> = <img width="108" height="47" alt="image" src="https://github.com/user-attachments/assets/7451329f-14c4-4762-960b-096ce1c0a824" />  
