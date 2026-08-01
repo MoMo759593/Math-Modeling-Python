@@ -276,7 +276,7 @@
    同时，这里有一个关键参数<img width="146" height="24" alt="image" src="https://github.com/user-attachments/assets/8e412e9c-4994-4e88-9c1b-0cb0ce6faa57" />  
    回归模型的显著性试验：依次计算<img width="134" height="41" alt="image" src="https://github.com/user-attachments/assets/13e34703-6ba1-46b7-a7e3-f7173812195d" />、<img width="105" height="31" alt="image" src="https://github.com/user-attachments/assets/c519db2c-7333-4439-80de-8aec2d070cb2" />、<img width="193" height="35" alt="image" src="https://github.com/user-attachments/assets/7ff670ff-9676-4665-abc5-12209e5de505" />  
    然后进行F检验：<img width="258" height="49" alt="image" src="https://github.com/user-attachments/assets/1e293c65-b13c-460e-b98e-5bd71809808a" />  
-   回归模型的拟合性检验：<img width="151" height="58" alt="image" src="https://github.com/user-attachments/assets/45bc6a03-9083-4266-b953-e8236bf46519" />  
+   回归模型的拟合性检验：<img width="165" height="44" alt="image" src="https://github.com/user-attachments/assets/f2d541d0-cbbd-4736-b6e1-8bb3424b2112" />  
    越靠近1，拟合越好.  
 
 **3. 回归模型的选择方法**：去掉解释变量、增加解释变量、模型选择的一般方法（向后法、向前法、逐步回归法）  
