@@ -271,7 +271,7 @@
 **2. 多元线性回归**：多元线性回归模型、回归系数β的最小二乘估计、回归模型的显著性试验、回归模型的拟合性检验  
    多元线性回归是一元线性回归的延申，整体思想一致.  
    多元线性回归模型：y = Xβ ＋ ε，ε ~ N(0,σ²).其中，y受到m个因素影响.  
-   此处，X是1行m列的因素矩阵，β是m行1列的系数矩阵.  
+   此处，X是m行n列的因素矩阵，即每个因素各有n个数据.  
    回归系数β的最小二乘估计：通过计算<img width="98" height="28" alt="image" src="https://github.com/user-attachments/assets/62540fa7-46a5-42d5-8c8a-7aadbc84f0c7" />，即<img width="119" height="27" alt="image" src="https://github.com/user-attachments/assets/54594024-4c1a-4cae-b773-377aaf49a5ef" />可得.这里X要列满秩，即满足秩＝列数.  
    同时，这里有一个关键参数<img width="146" height="24" alt="image" src="https://github.com/user-attachments/assets/8e412e9c-4994-4e88-9c1b-0cb0ce6faa57" />  
    回归模型的显著性试验：依次计算<img width="134" height="41" alt="image" src="https://github.com/user-attachments/assets/13e34703-6ba1-46b7-a7e3-f7173812195d" />、<img width="105" height="31" alt="image" src="https://github.com/user-attachments/assets/c519db2c-7333-4439-80de-8aec2d070cb2" />、<img width="193" height="35" alt="image" src="https://github.com/user-attachments/assets/7ff670ff-9676-4665-abc5-12209e5de505" />  
